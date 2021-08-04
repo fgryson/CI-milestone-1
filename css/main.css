@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0 25% 0 25%;
+}
+
+.content img {
+    margin: 0 25% 0 25%;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+header {
+    padding: 2em 0 2em 0;
+    size: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header>a {
+    font-size: 2em;
+}
+
+.content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.content p {
+    margin-bottom: 1em;
+}
+
+.twitter-timeline {
+    margin: 0 25% 0 25%;
+}
+
+.contact {
+    font-size: 1.5em;
+}
