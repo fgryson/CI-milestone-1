@@ -1,45 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'Lato', sans-serif;
+  font-family: "Merriweather", serif;
+  color: #444455;
 }
 
 body {
-    margin: 0 25% 0 25%;
+  background-color: #d5e4e7;
+  margin: 0 25% 0 25%;
 }
 
-.content img {
-    margin: 0 25% 0 25%;
-    width: 50%;
-    margin-bottom: 2em;
+a {
+  color: #314f6f;
+  text-decoration: none;
 }
 
 header {
-    padding: 2em 0 2em 0;
-    size: 150%;
-    font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 200px;
+  background-color: rgba(238, 244, 247, 0.8);
+  background-image: url(../files/nav-background.png);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-header>a {
-    font-size: 2em;
+header nav {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+header aside {
+  color: #ff1493;
+}
+
+nav a {
+  padding: 0 5px 0 5px;
+}
+
+#title {
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: #ff1493;
+}
+
+.nav-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #fffee0;
+  height: 1em;
+  width: 50%;
+  bottom: 0;
+}
+
+.content {
+  background-color: #fffee0;
+  padding-top: 275px;
+}
+
+.content img {
+  margin: 0 25% 0 25%;
+  width: 50%;
+  margin-bottom: 1em;
 }
 
 .content h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+  width: 95%;
+  margin: 2em 2.5% 1em 2.5%;
+  color: #ff1493;
+  font-size: 1.5em;
+}
+
+h3 em {
+  color: #ff1493;
 }
 
 .content p {
-    margin-bottom: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  width: 95%;
+  padding: 0 2.5% 0 2.5%;
 }
 
 .twitter-timeline {
-    margin: 0 25% 0 25%;
-}
-
-.contact {
-    font-size: 1.5em;
+  margin: 0 10% 0 10%;
 }
