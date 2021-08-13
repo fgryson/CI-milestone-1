@@ -9,21 +9,20 @@
 }
 
 body {
-  background-color: #d5e4e7;
-  margin: 0 25% 0 25%;
+  background-color: #f1f1f1;
 }
 
 a {
-  color: #314f6f;
+  color: #9400d3;
   text-decoration: none;
 }
 
 header {
   position: fixed;
   top: 0;
-  width: 50%;
-  height: 200px;
-  background-color: rgba(238, 244, 247, 0.8);
+  width: 100%;
+  height: 25vh;
+  background-color: rgba(238, 238, 238, 0.9);
   background-image: url(../files/nav-background.png);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -32,21 +31,30 @@ header {
 }
 
 header nav {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 header aside {
-  color: #ff1493;
+  margin: 0 0 4vh 2vw;
+  font-size: 120%;
 }
 
 nav a {
-  padding: 0 5px 0 5px;
+  display: inline-block;
+  margin: 0 2vw 0 2vw;
+  padding: 2px 1vw 2px 1vw;
+  width: 8vw;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.5);
+  border-left: 1px solid #9400d399;
+  border-bottom: 1px solid #9400d399;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 #title {
-  font-size: 2em;
-  text-decoration: underline;
+  font-size: 200%;
   text-decoration-color: #ff1493;
 }
 
@@ -57,48 +65,83 @@ nav a {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
 }
 
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
-  background-color: #fffee0;
+  background-color: #f1f1f1;
   height: 1em;
-  width: 50%;
+  width: 100%;
   bottom: 0;
-}
+} */
 
 .content {
-  background-color: #fffee0;
-  padding-top: 275px;
+  float: left;
+  width: 70%;
+  background-color: #f1f1f1;
+  padding-top: calc(25vh + 1.5em);
 }
 
-.content img {
-  margin: 0 25% 0 25%;
-  width: 50%;
+.portrait {
+  width: 30%;
+  object-fit: contain;
+  margin-right: 10%;
   margin-bottom: 1em;
+  margin-left: 10%;
+  float: left;
+}
+
+.intro {
+  font-size: 1.2em;
 }
 
 .content h3 {
-  width: 95%;
-  margin: 2em 2.5% 1em 2.5%;
-  color: #ff1493;
+  width: 90%;
+  margin: 0 5% 0.5em 5%;
   font-size: 1.5em;
-}
-
-h3 em {
-  color: #ff1493;
 }
 
 .content p {
   text-align: justify;
   line-height: 1.5;
   margin-bottom: 1em;
-  width: 95%;
-  padding: 0 2.5% 0 2.5%;
+  width: 90%;
+  padding: 0 5% 0 5%;
+}
+
+.contact {
+  float: right;
+  width: calc(30% - 2px);
+  padding-top: calc(25vh + 1.5em);
+  border-left: 1px solid #9400d355;
+}
+
+.contact h3 {
+  padding-bottom: 1em;
+  padding-left: 5%;
+}
+
+.contact p {
+  padding-bottom: 1em;
+  padding-left: 5%;
+}
+
+.lir-logo {
+  float: left;
+  width: 20%;
+  margin-top: 1em;
+  margin-left: 27.5%;
+}
+
+.trinity-logo {
+  float: right;
+  width: 20%;
+  margin-top: 1em;
+  margin-right: 27.5%;
 }
 
 .twitter-timeline {
-  margin: 0 10% 0 10%;
+  margin-left: 5%;
 }
