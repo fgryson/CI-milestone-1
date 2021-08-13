@@ -55,7 +55,8 @@ nav a {
 
 #title {
   font-size: 200%;
-  text-decoration-color: #ff1493;
+  margin-left: 2vw;
+  color: #314f6f;
 }
 
 .nav-container {
