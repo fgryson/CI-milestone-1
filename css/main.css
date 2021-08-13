@@ -69,15 +69,6 @@ nav a {
   text-align: left;
 }
 
-/* footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #f1f1f1;
-  height: 1em;
-  width: 100%;
-  bottom: 0;
-} */
-
 .content {
   float: left;
   width: 70%;
@@ -87,6 +78,7 @@ nav a {
 
 .portrait {
   width: 30%;
+  /* Scales to maintain aspect ratio */
   object-fit: contain;
   margin-right: 10%;
   margin-bottom: 1em;
@@ -114,6 +106,7 @@ nav a {
 
 .contact {
   float: right;
+  /* Using calc to ensure consistent styling */
   width: calc(30% - 2px);
   padding-top: calc(25vh + 1.5em);
   border-left: 1px solid #9400d355;
@@ -129,6 +122,7 @@ nav a {
   padding-left: 5%;
 }
 
+/* Formatting logos to float beside eachother */
 .lir-logo {
   float: left;
   width: 20%;
