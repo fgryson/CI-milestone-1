@@ -59,6 +59,12 @@ nav a {
   color: #314f6f;
 }
 
+/* Highlight currently open page in Nav */
+.current {
+  background-color: #9400d3;
+  color: rgba(238, 238, 238, 1);
+}
+
 .nav-container {
   position: absolute;
   bottom: 0;
