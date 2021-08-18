@@ -186,6 +186,10 @@ nav a {
     text-align: left;
   }
 
+  header nav {
+    margin-right: calc(30% - 2px);
+  }
+
   .nav-container aside {
     display: block;
     margin: 0 0 4vh 2vw;
