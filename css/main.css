@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
+/*
+  Variables for easy customisation of theme are created here.
+  They're stored as a list of rgb values to allow for application of an alpha channel.
+  Unfortunately this means that the var call has to be wrapped in an rgb call to convert to a colour.
+ */
+:root {
+  --background-color: 241, 241, 241;
+  --highlight-color: 148, 0, 211;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +19,11 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: rgb(var(--background-color));
 }
 
 a {
-  color: #9400d3;
+  color: rgb(var(--highlight-color));
   text-decoration: none;
 }
 
@@ -22,7 +32,7 @@ header {
   top: 0;
   width: 100%;
   height: 25vh;
-  background-color: rgba(238, 238, 238, 0.9);
+  background-color: rgba(var(--background-color), 0.9);
   background-image: url(../files/nav-background.png);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -46,9 +56,9 @@ nav a {
   padding: 2px 1vw 2px 1vw;
   width: 8vw;
   text-align: center;
-  background-color: rgba(238, 238, 238, 0.5);
-  border-left: 1px solid #9400d399;
-  border-bottom: 1px solid #9400d399;
+  background-color: rgba(var(--background-color), 0.5);
+  border-left: 1px solid rgba(var(--highlight-color), 0.6);
+  border-bottom: 1px solid rgba(var(--highlight-color), 0.6);
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -56,13 +66,12 @@ nav a {
 #title {
   font-size: 200%;
   margin-left: 2vw;
-  color: #314f6f;
 }
 
 /* Highlight currently open page in Nav */
 .current {
-  background-color: #9400d3;
-  color: rgba(238, 238, 238, 1);
+  background-color: rgb(var(--highlight-color));
+  color: rgb(var(--background-color));
 }
 
 .nav-container {
@@ -78,7 +87,7 @@ nav a {
 .content {
   float: left;
   width: 70%;
-  background-color: #f1f1f1;
+  background-color: rgb(var(--background-color));
   padding-top: calc(25vh + 1.5em);
 }
 
@@ -115,7 +124,7 @@ nav a {
   /* Using calc to ensure consistent styling */
   width: calc(30% - 2px);
   padding-top: calc(25vh + 1.5em);
-  border-left: 1px solid #9400d355;
+  border-left: 1px solid rgba(var(--highlight-color), 0.3);
 }
 
 .contact h3 {
