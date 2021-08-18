@@ -152,6 +152,10 @@ nav a {
   margin-right: 10%;
 }
 
+.reference {
+  font-size: small;
+}
+
 .project {
   margin-bottom: 2em;
 }
