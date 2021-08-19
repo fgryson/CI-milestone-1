@@ -6,8 +6,8 @@
   Unfortunately this means that the var call has to be wrapped in an rgb call to convert to a colour.
  */
 :root {
-  --background-color: 241, 241, 241;
-  --highlight-color: 148, 0, 211;
+  --background-color: 255, 255, 240;
+  --highlight-color: 47, 80, 97;
 }
 
 * {
@@ -15,7 +15,7 @@
   padding: 0;
 
   font-family: "Merriweather", serif;
-  color: #444455;
+  color: #0e1318;
 }
 
 body {
@@ -162,7 +162,7 @@ nav a {
 
 .project img {
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid rgb(var(--highlight-color));
   margin-left: 25%;
 }
 
