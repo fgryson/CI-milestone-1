@@ -8,8 +8,6 @@ You can see the deployed version [here](https://fgryson.github.io/CI-milestone-1
 
 ## 1. UX
 
----
-
 ### 1.1. Project Goals
 
 The website was designed as a place for the academic to collect and display the various works she has online, improving her online presence and creating the opportunity for her work to be seen in context together.
@@ -35,8 +33,6 @@ Wireframes were made using Balsamiq.
 <!-- Add table of wireframes -->
 
 ## 2. Features
-
----
 
 ### 2.1. Existing features
 
@@ -89,8 +85,6 @@ The header and Contact panel are consistent elements throughout the website.
 
 ## 3. Technologies used
 
----
-
 - [HTML5](https://en.wikipedia.org/wiki/HTML) - contains structure and content of website.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) - provides styling to website.
 - [Balsamiq](https://balsamiq.com/) - used to make wireframes.
@@ -106,13 +100,9 @@ The header and Contact panel are consistent elements throughout the website.
 
 ## 4. Testing
 
----
-
 See more on testing methodology [here](TESTING.md).
 
 ## 5. Deployment
-
----
 
 ### To deploy the project
 
@@ -133,8 +123,6 @@ To clone this project from GitHub:
 3. Using you git client **clone** the URL into your desired directory.
 
 ## 6. Credits
-
----
 
 ### 6.1. Content
 
