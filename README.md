@@ -26,11 +26,19 @@ From the perspective of a visitor the site acts as both a short bio on the acade
 - As a user, I want to see what projects this academic is working on.
 - As a fellow academic, I want to get in contact and enquire about collaboration.
 
-### 1.3. Wireframes
+### 1.3. Design
+- Colour scheme
+  - I used two main colours in the design, Dark Teal and a light Ivory.
+- Typography
+  - I opted to use Merriweather throughout with serif as a fallback as a serif font lends a more academic weight to the design.
+- Imagery
+  - All imagery in the site is used to highlight the subjects of study the academic is involved in.
+
+### 1.4. Wireframes
 
 Wireframes were made using Balsamiq.
 
-<!-- Add table of wireframes -->
+You can see them [here](readme-images/wireframes/).
 
 ## 2. Features
 
