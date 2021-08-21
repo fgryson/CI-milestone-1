@@ -1,4 +1,4 @@
-# Academic Website
+# Orlaith Darling - Doctoral candidate TCD
 
 ![AmIResponsive image](readme-images/amiresponsive.png)
 
