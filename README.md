@@ -126,9 +126,11 @@ This project is hosted in GitHub Pages
 
 To clone this project from GitHub:
 
-1. Above the code list open the **Code** dropdown.
+1. Open the **Code** dropdown which is below the project's navbar.
 2. Select **HTTPS**.
-3. Using you git client **clone** the URL into your desired directory.
+3. Copy the repository **URL**.
+4. Using your git client of choice **clone** the URL into your desired directory:
+`$ git clone https://github.com/fgryson/CI-milestone-1.git desired-directory`
 
 ## 6. Credits
 
