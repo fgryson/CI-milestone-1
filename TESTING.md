@@ -60,5 +60,7 @@ Having tested the project on these browsers I found no issues with responsivenes
 - As discussed previously the solution I used to apply an Alpha channel to a colour stored as a CSS variable threw an error in the validator. While the solution works visually and has the desired effect, a better solution I found uses PostCSS. As PostCSS is Javascript adjacent it's outside the scope of this project.
 - While not necessarily a bug, I found during development that certain URLs were making my HTML files unwieldy. I opted to use bit.ly to shorten the URLs to make organising the source files easier.
 - While validating the html files I discovered that I had left spaces in some og the file names which is undesirable, this was resolved by renaming the files.
+- With the help of my mentor, I found a bug I never personally encountered during my testing on various browsers and devices. The twitter embedded timeline may fail to load. The way the timeline is implemented allows it to fail gracefully however, as if the twitter provided script doesn't load it remains as a link leading to the timeline on twitter itself.
+- Some console warnings might also be thrown due to the twitter embedded timeline. As far as I can tell these are most likely caused by certain script blocking browser extensions.
 
 [Return to README](README.md)
