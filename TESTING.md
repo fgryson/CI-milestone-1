@@ -22,7 +22,8 @@ Using both the Chrome and Firefox development tools I tested the project for res
 
 ![AmIResponsive image](readme-images/amiresponsive.png)
 
-![Screenshot of website on mobile](readme-images/mobile-screenshot.jpg)
+<!-- Using HTML tag to resize large image -->
+<img src="./readme-images/mobile-screenshot.jpg" width="50%">
 
 ## Browser compatibility
 
@@ -32,7 +33,7 @@ Browsers tested:
 - Edge
 - Edge on Android
 
-Having tested the project on these browsers I found no issues with responsiveness or appearance.
+Having tested the project on these browsers I found no issues with responsiveness, appearance or functionality.
 
 ## Testing User stories
 
