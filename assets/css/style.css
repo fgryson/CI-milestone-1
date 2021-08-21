@@ -1,9 +1,11 @@
+/* Using @import to load required Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 /*
   Variables for easy customisation of theme are created here.
   They're stored as a list of rgb values to allow for application of an alpha channel.
   Unfortunately this means that the var call has to be wrapped in an rgb call to convert to a colour.
+  As also discussed in TESTING this throws a validator error, although still results in the desired behaviour.
  */
 :root {
   --background-color: 255, 255, 240;
@@ -14,11 +16,13 @@
   margin: 0;
   padding: 0;
 
+  /* A serif font is used to evoke academia */
   font-family: "Merriweather", serif;
   color: #0e1318;
 }
 
 body {
+  /* As is seen here whereever the background or highlight colour is applied a var call has to be also wrapped in an rbg CSS function */
   background-color: rgb(var(--background-color));
 }
 
@@ -31,6 +35,7 @@ h3 {
   text-align: center;
 }
 
+/* The header is given a fixed position to have it positioned consistantly across all pages */
 header {
   position: fixed;
   top: 0;
@@ -51,6 +56,7 @@ header nav {
   margin-bottom: 0.5em;
 }
 
+/* On portait displays the aside in the header is not displayed to prevent clutter */
 .nav-container aside {
   display: none;
 }
@@ -90,6 +96,7 @@ nav a {
   text-align: left;
 }
 
+/* Using a portrait display as the default the content class is displayed in DOM order above .contact */
 .content {
   margin: 0 5% 0 5%;
   width: 90%;
@@ -97,6 +104,7 @@ nav a {
   padding-top: calc(15vh + 1.5em);
 }
 
+/* The portrait class is applied to the self portrait in index.html */
 .portrait {
   width: 60vw;
   margin-right: 15vw;
@@ -119,9 +127,9 @@ nav a {
   padding: 0 5% 0 5%;
 }
 
+/* On portrait displays the contact panel is floated left to ensure it doesn't interact with other floated elements */
 .contact {
   float: left;
-  /* Using calc to ensure consistent styling */
   margin: 0 5% 0 5%;
   width: 90%;
   padding-top: 2em;
@@ -152,6 +160,7 @@ nav a {
   margin-right: 10%;
 }
 
+/* The reference class is used to shrink text on the publications and blogs pages */
 .reference {
   font-size: small;
 }
@@ -160,6 +169,7 @@ nav a {
   margin-bottom: 2em;
 }
 
+/* Project images on portrait displays are centered above their descriptions */
 .project img {
   width: 50%;
   border: 1px solid rgb(var(--highlight-color));
@@ -190,12 +200,14 @@ nav a {
     margin-right: calc(30% - 2px);
   }
 
+  /* The header's short blurb is shown on widescreen where it has room to display comfortably */
   .nav-container aside {
     display: block;
     margin: 0 0 4vh 2vw;
     font-size: 120%;
   }
 
+  /* On widescreen displays the content panel is floated left and sized to take up the primary part of the page */
   .content {
     float: left;
     width: 70%;
@@ -209,6 +221,7 @@ nav a {
     text-align: justify;
   }
 
+  /* On widescreen displays the contact panel is placed to the right and sized to not distract from the pages primary purpose but be easily accessible */
   .contact {
     text-align: left;
     float: right;
@@ -246,11 +259,13 @@ nav a {
     margin-right: 27.5%;
   }
 
+  /* On widescreen displays the projects themselves are floated to list nicely */
   .project {
     float: left;
     margin-bottom: 1em;
   }
 
+  /* Within the projects container div the logo and description are floated to be beside eachother preserving strong coupling of information */
   .project img {
     float: left;
     width: 10%;

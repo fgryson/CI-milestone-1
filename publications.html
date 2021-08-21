@@ -9,6 +9,7 @@
       College Dublin
     </title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- A favicon is used to display an icon in the user's tab bar or bookmarks -->
     <link rel="icon" type="image/jpg" href="./assets/images/icon.jpg" />
   </head>
 
@@ -22,20 +23,26 @@
         </aside>
         <nav>
           <a href="./index.html">Home</a>
+          <!-- The "current" class is used to highlight the currently open page in the navbar -->
           <a href="./publications.html" class="current">Publications</a>
           <a href="./projects.html">Projects</a>
           <a href="./blogs.html">Blogs</a>
         </nav>
       </div>
     </header>
+    <!-- The content class defines the main content of the page, which takes the larger panel in widescreen and the top panel in portrait -->
     <div class="content">
       <h3>Here are some of my recent publications:</h3>
+      <!--
+        Each publication has a span tag with class "reference" which shrinks the attached element to emphasise the publication's title
+      -->
       <p>
         ‘Editorial: Twenty-First Century Irish Women’s Writing’.<br /><span
           class="reference"
           ><em>Alluvium </em>9:1 (2021). Co-written/edited with Dearbhaile
           Houston.</span
         ><br />Read online
+        <!-- All anchor tags in this page's content element were shortened using bitly to make more presentable in code -->
         <a href="https://bit.ly/3Dar9rY" target="_blank">here.</a>
       </p>
       <p>
@@ -53,6 +60,7 @@
           ><em>Critique: Studies in Contemporary Fiction </em>(2020). 14pp. doi:
           10.1080/00111619.2020.1835802</span
         ><br />
+        <!-- In some cases the user is able to download the relevant file as opposed to visiting it elsewhere -->
         <a
           href="./assets/documents/it-was-our-great-generational-decision-capitalism-the-internet-and-depersonalization-in-some-millennial-irish-women-s-writing-1-1.pdf"
           download
@@ -98,13 +106,20 @@
         <a href="https://bit.ly/3suzth6" target="_blank">here</a>
       </p>
     </div>
+    <!-- The contact class defines the contents of the contact panel, which takes up the secondary right side panel in widescreen and the bottom panel in portrait -->
     <div class="contact">
       <h3>Contact</h3>
+      <!-- mailto is used to automatically open the user's desired email client -->
       <p>Send me an <a href="mailto:darlingo@tcd.ie">email</a>.</p>
       <p>
         Email Contemporary Irish Lit
         <a href="mailto:ContempIrishLit@gmail.com">here</a>.
       </p>
+      <!--
+        The following is twitter's recommended way to embed a timeline, the anchor tag is replaced with an iframe by the widget script below. On success a twitter timeline
+        widget containing the desired account's top three tweets is displayed. If the script isn't loaded properly however it fails gracefully leaving the original 
+        anchor tag as a script free alternative to get to the desired timeline.
+      -->
       <a
         class="twitter-timeline"
         data-tweet-limit="3"

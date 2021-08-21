@@ -9,6 +9,7 @@
       College Dublin
     </title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- A favicon is used to display an icon in the user's tab bar or bookmarks -->
     <link rel="icon" type="image/jpg" href="./assets/images/icon.jpg" />
   </head>
 
@@ -24,17 +25,23 @@
           <a href="./index.html">Home</a>
           <a href="./publications.html">Publications</a>
           <a href="./projects.html">Projects</a>
+          <!-- The "current" class is used to highlight the currently open page in the navbar -->
           <a href="./blogs.html" class="current">Blogs</a>
         </nav>
       </div>
     </header>
+    <!-- The content class defines the main content of the page, which takes the larger panel in widescreen and the top panel in portrait -->
     <div class="content">
       <h3>Here are some of my recent blog posts:</h3>
+      <!--
+        Each blog has a span tag with class "reference" which shrinks the attached element to emphasise the blog's title
+      -->
       <p>
         ‘Unmarried mothers and “Unwanted Children” in Contemporary Irish Women’s
         Short Fiction’.<br /><span class="reference"
           >‘Spit the Pips’. <em>Contemporary Irish Literature (CIL)</em>.</span
         ><br />Read
+        <!-- All anchor tags open in a new tab to allow the user to easily return to the site and read other blogs -->
         <a
           href="https://contemporaryirishlit.wordpress.com/2021/01/15/unmarried-mothers-and-unwanted-children-in-contemporary-irish-womens-short-fiction/"
           target="_blank"
@@ -131,13 +138,20 @@
         >
       </p>
     </div>
+    <!-- The contact class defines the contents of the contact panel, which takes up the secondary right side panel in widescreen and the bottom panel in portrait -->
     <div class="contact">
       <h3>Contact</h3>
+      <!-- mailto is used to automatically open the user's desired email client -->
       <p>Send me an <a href="mailto:darlingo@tcd.ie">email</a>.</p>
       <p>
         Email Contemporary Irish Lit
         <a href="mailto:ContempIrishLit@gmail.com">here</a>.
       </p>
+      <!--
+        The following is twitter's recommended way to embed a timeline, the anchor tag is replaced with an iframe by the widget script below. On success a twitter timeline
+        widget containing the desired account's top three tweets is displayed. If the script isn't loaded properly however it fails gracefully leaving the original 
+        anchor tag as a script free alternative to get to the desired timeline.
+      -->
       <a
         class="twitter-timeline"
         data-tweet-limit="3"
