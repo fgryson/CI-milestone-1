@@ -2,7 +2,7 @@
 
 ## Code validators
 
-[HTML Validator](https://validator.w3.org/) : 
+[HTML Validator](https://validator.w3.org/):
 
 All pages passed without errors and only one warning that was shared between all pages as it was in the shared Contact pane.
 
@@ -10,7 +10,7 @@ All pages passed without errors and only one warning that was shared between all
 
 I decided to leave this warning as it was part of the embedded twitter element and was the HTML code provided by their documentation.
 
-[CSS Validator](https://jigsaw.w3.org/css-validator/) : 
+[CSS Validator](https://jigsaw.w3.org/css-validator/):
 
 ![CSS validation error](readme-images/css-validation-error.png)
 
@@ -20,6 +20,16 @@ CSS validation threw one consistent error, all the result of the method I used t
 
 Using both the Chrome and Firefox development tools I tested the project for responsiveness. I also tested the project physically on mobile througout development using the Live Server extension for VSCode.
 
+|              | **index.html** | **publications.html** | **projects.html** | **blogs.html** |
+| ------------ | :------------: | :-------------------: | :---------------: | :------------: |
+| Desktop      |       ✅        |           ✅           |         ✅         |       ✅        |
+| Laptop       |       ✅        |           ✅           |         ✅         |       ✅        |
+| Galaxy S9    |       ✅        |           ✅           |         ✅         |       ✅        |
+| iPad         |       ✅        |           ✅           |         ✅         |       ✅        |
+| iPhone 5     |       ✅        |           ✅           |         ✅         |       ✅        |
+| iPhone 6/7/8 |       ✅        |           ✅           |         ✅         |       ✅        |
+| iPhone X/XS  |       ✅        |           ✅           |         ✅         |       ✅        |
+
 ![AmIResponsive image](readme-images/amiresponsive.png)
 
 <!-- Using HTML tag to resize large image -->
@@ -28,6 +38,7 @@ Using both the Chrome and Firefox development tools I tested the project for res
 ## Browser compatibility
 
 Browsers tested:
+
 - Firefox
 - Chrome
 - Edge
@@ -56,7 +67,7 @@ Having tested the project on these browsers I found no issues with responsivenes
 - As a fellow academic, I want to get in contact and enquire about collaboration.
   - Both the academic's email and the email of a project she is heading is easily accessible on all pages using the **Contact panel**.
 
-## Bugs 
+## Bugs
 
 - As discussed previously the solution I used to apply an Alpha channel to a colour stored as a CSS variable threw an error in the validator. While the solution works visually and has the desired effect, a better solution I found uses PostCSS. As PostCSS is Javascript adjacent it's outside the scope of this project.
 - While not necessarily a bug, I found during development that certain URLs were making my HTML files unwieldy. I opted to use bit.ly to shorten the URLs to make organising the source files easier.
