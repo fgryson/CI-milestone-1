@@ -14,7 +14,7 @@ I decided to leave this warning as it was part of the embedded twitter element a
 
 ![CSS validation error](readme-images/css-validation-error.png)
 
-CSS validation threw one consistent error, all the result of the method I used to apply alpha transparency to colour variables. The colour had to be stored as a CSS variable which contained three seperate value (Red, Green, and Blue) which would be passed into an RGB or RGBA css function as required. While visually this has the desired effect the validator throws an error.
+CSS validation threw one consistent error, all the result of the method I used to apply alpha transparency to colour variables. The colour had to be stored as a CSS variable which contained three seperate value (Red, Green, and Blue) which would be passed into an RGB or RGBA css function as required. While visually this has the desired effect the validator throws an error. You can read more about this implentation in the comments [here](assets/css/style.css).
 
 ## Responsiveness
 
